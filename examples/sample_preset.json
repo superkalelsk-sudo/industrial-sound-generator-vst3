@@ -1,0 +1,81 @@
+# Industrial Sound Generator VST3 - Example Preset
+
+This is an example preset file (XML format) showing parameter values for the plugin.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters>
+  <!-- Sampler Parameters -->
+  <Parameter name="sample" value="0"/>
+  <Parameter name="pitch" value="0.0"/>
+  <Parameter name="speed" value="1.0"/>
+  <Parameter name="attack" value="10.0"/>
+  <Parameter name="release" value="100.0"/>
+  
+  <!-- Bitcrusher Parameters -->
+  <Parameter name="bitcrusher_depth" value="0.5"/>
+  <Parameter name="bitcrusher_mix" value="0.8"/>
+  
+  <!-- Ring Modulator Parameters -->
+  <Parameter name="ringmod_freq" value="150.0"/>
+  <Parameter name="ringmod_mix" value="0.4"/>
+  
+  <!-- Distortion Parameters -->
+  <Parameter name="distortion_drive" value="5.0"/>
+  <Parameter name="distortion_tone" value="8000.0"/>
+  <Parameter name="distortion_mix" value="0.6"/>
+  
+  <!-- Multiband EQ Parameters -->
+  <Parameter name="multiband_low" value="-3.0"/>
+  <Parameter name="multiband_mid" value="0.0"/>
+  <Parameter name="multiband_high" value="6.0"/>
+  
+  <!-- Reverb Parameters -->
+  <Parameter name="reverb_room" value="0.7"/>
+  <Parameter name="reverb_damp" value="0.5"/>
+  <Parameter name="reverb_wet" value="0.4"/>
+  <Parameter name="reverb_dry" value="0.6"/>
+  
+  <!-- Master Parameters -->
+  <Parameter name="master_gain" value="-3.0"/>
+</Parameters>
+```
+
+## How to Use
+
+1. Save this preset with a meaningful name: `MyPreset.xml`
+2. Place in the presets directory:
+   - **macOS:** `~/Library/Application Support/IndustrialGenerator/Presets/`
+   - **Windows:** `%APPDATA%\IndustrialGenerator\Presets\`
+   - **Linux:** `~/.config/IndustrialGenerator/Presets/`
+3. Open the plugin in your DAW
+4. Go to **Master Tab**
+5. Click **Load Preset** and select your preset
+
+## Common Presets
+
+### Gritty Kick
+```xml
+<Parameter name="bitcrusher_depth" value="0.9"/>
+<Parameter name="bitcrusher_mix" value="1.0"/>
+<Parameter name="distortion_drive" value="7.0"/>
+<Parameter name="multiband_low" value="6.0"/>
+<Parameter name="reverb_wet" value="0.1"/>
+```
+
+### Metallic Bell
+```xml
+<Parameter name="ringmod_freq" value="200.0"/>
+<Parameter name="ringmod_mix" value="0.9"/>
+<Parameter name="distortion_drive" value="2.0"/>
+<Parameter name="reverb_room" value="0.9"/>
+<Parameter name="reverb_wet" value="0.6"/>
+```
+
+### Harsh Snare
+```xml
+<Parameter name="distortion_drive" value="8.0"/>
+<Parameter name="distortion_tone" value="12000.0"/>
+<Parameter name="multiband_high" value="8.0"/>
+<Parameter name="bitcrusher_depth" value="0.6"/>
+```

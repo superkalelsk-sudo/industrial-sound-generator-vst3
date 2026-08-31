@@ -1,0 +1,55 @@
+# Build artifacts and intermediate files
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.make
+
+# IDE files
+.vscode/
+.idea/
+*.xcodeproj/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.xcconfig
+*.pbxproj
+
+# Object files and libraries
+*.o
+*.a
+*.so
+*.dylib
+*.lib
+*.exe
+*.dll
+
+# macOS
+.DS_Store
+*.dSYM/
+
+# Compiled VST3 plugin
+*.vst3/
+*.VST3/
+
+# Preset files
+*.xml
+*.json
+
+# Dependencies
+JUCE/
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary files
+*~
+*.swp
+*.swo
+.tmp/
